@@ -26,3 +26,30 @@ body{
     width: 100%;
     background-color: #B6B5B5;
 }
+.product-title{
+    padding-top: 0.5rem;
+    color: var(--Color-2, #1E1E1E);
+    font-size: 18px;
+    font-weight: 500;
+}
+.product-price{
+    color: rgba(30, 30, 30, 0.50);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Small Devices */
+
+@media screen and (max-width: 576px) {
+    .gallery-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Medium Devices */
+
+@media screen and (max-width: 992px) and (min-width: 576px) {
+    .gallery-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
